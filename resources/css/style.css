@@ -1,0 +1,142 @@
+* {
+  margin: 0 0;
+}
+
+html {
+  font-family: helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+header {
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  width: 100%;
+}
+
+a {
+  color: seashell;
+  padding: 0 10px;
+}
+
+.lefthead {
+  margin-left: 10px;
+}
+
+.lefthead img {
+  height: 50px;
+}
+
+.righthead {
+  margin-right: 10px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* WARNING:  */
+  /* When applying margin-top instead of padding-top the margin of the hole page moves down instead of just the .banner margin. Why is that?????? */
+  padding-top: 70px;
+  /* WARNING:  */
+}
+
+.image {
+  background-image: url("../../resources/img/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.banner .title {
+  background-color: black;
+  text-align: center;
+  height: 100px;
+}
+
+.highlights {
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  width: 1000px;
+}
+
+.teahighlight {
+  padding: 20px 0;
+}
+
+.teahighlight img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.locations {
+  background-image: url("../../resources/img/img-locations-background.jpg");
+  /* background-size: contain; */
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 15px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+}
+
+.locationtitle {
+  width: 1200px;
+  text-align: center;
+  /* WARNING: I had troubles to align the h2 title Locations in this box. I have 3 flex elements 'box' that wiht justify aligment to center. However I wanted to add the Location title on a different line of the same flex box but standing by itself.
+  I have managed to it by setting the width to 1200px; however I'm not sure if that is the more orthodox way to do it.
+  @CODECADEMY: Could you advise on the best practice for this?
+   */
+}
+
+.bottom {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  margin-left: 20px;
+}
